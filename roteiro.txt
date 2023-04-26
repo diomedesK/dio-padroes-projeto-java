@@ -1,0 +1,20 @@
+  Parceiro:
+    codigo 				∈ [1, 1000]
+    nome.matches 			^(\w{2,}\s){2}
+    telefone.matches		^((\(\d{2}\))|(\d{2}))\d{4}-?\d{4}$							// telefone fixo no caso
+    email.matches			^\w{2,}@\w+\.\w+$
+
+  Funcionario:
+    CPTS	 				∈ [1, 5000]
+
+  Cliente:
+    celular.matches		^((\(\d{2}\))|(\d{2}))\d{5}-?\d{4}$							// telefone celular no caso
+    RG.matches			^\w{8,11}$													// o formato do RG varia de acordo com o estado
+    CPF.matches			^\d{3}\.?\d{3}\.?\d{3}-?\d{2}$
+
+  Fornecedor:
+    RazaoSocial.matches	^(\w{2,}\s){2}												// mesmo que o nome
+    IE.matches			^\w{1,15}$
+    CNPJ.matches			^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$							// o template '00.000.000/0000-00' é obrigatório
+
+
